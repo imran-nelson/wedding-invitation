@@ -1,0 +1,37 @@
+/* ===== Design tokens (can also be overridden from js/config.js → theme) ===== */
+:root{
+  /* Warm Gold Backgrounds & Surfaces */
+  --bg:#FAF4E6;              /* Warm luminous ivory-gold base */
+  --bg-2:#F4EBD9;            /* Rich champagne gold surface for alternate sections */
+  --card:#FFFDF8;            /* Warm radiant ivory card */
+  --champagne:#EBDDC3;       /* Soft gold champagne accent */
+  --border:#E6D7BE;          /* Warm golden keyline border */
+
+  /* Gold Palette & Metallic Gradients */
+  --gold:#C6A568;            /* Warm royal gold */
+  --gold-soft:#DFCEAC;       /* Soft gold highlight */
+  --gold-muted:#A98B57;      /* Muted antique gold */
+  --gold-deep:#805912;       /* Deep readable gold */
+  --gold-grad:linear-gradient(135deg, #F5E5BE 0%, #D4AF37 36%, #A87E26 72%, #F7E5B5 100%);
+  --gold-bg-grad:radial-gradient(ellipse at 50% 30%, #FFFDF8 0%, #FAF4E6 50%, #F2E3C6 100%);
+  --gold-linear-grad:linear-gradient(180deg, #FAF4E6 0%, #F5E8CC 45%, #EEDCBA 100%);
+
+  /* Royal Gold Typography & Glitter */
+  --font-gold:#A1741F;           /* Vibrant golden tone for accents, weds, labels */
+  --font-gold-deep:#805912;      /* Rich dark gold for high-contrast legible text & titles */
+  --font-gold-light:#D4AF37;     /* Bright 24K gold */
+  --font-gold-shimmer:#FFF8D6;   /* Glitter highlight */
+  --brown:var(--font-gold-deep);
+  --charcoal:#3A2C14;        /* Deep espresso-gold tone */
+  --text:#423420;            /* Warm readable dark tone */
+  --text-2:#7C6B52;          /* Secondary text */
+  --gold-grad-foil:linear-gradient(115deg, #7A5212 0%, #A6731B 14%, #D4A237 26%, #FFF8D6 40%, #FFFFFF 50%, #FFF8D6 60%, #D4A237 74%, #A6731B 86%, #7A5212 100%);
+
+  --f-display:'Playfair Display',Georgia,serif;
+  --f-serif:'Cormorant Garamond',Georgia,serif;
+  --f-body:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --f-arabic:'Amiri','Noto Naskh Arabic','Traditional Arabic',serif;
+  --max:1080px; --header-h:62px; --radius:6px;
+  --shadow:0 22px 44px -28px rgba(110,75,20,.32);
+  --ease:cubic-bezier(.2,.7,.2,1);
+}

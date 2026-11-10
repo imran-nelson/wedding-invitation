@@ -1,0 +1,79 @@
+/* ===== Reusable components ===== */
+
+/* --- Islamic arch frame: 3 nested clipped layers (gold / champagne / ivory) ---
+   Shape comes from <clipPath id="arch-clip"> in index.html (objectBoundingBox → fully responsive) */
+.arch,.arch__mid,.arch__line,.arch__body{display:grid;clip-path:url(#arch-clip)}
+.arch{background:var(--gold-grad);padding:5px}
+.arch__mid{background:var(--champagne);padding:4px}
+.arch__line{background:var(--gold-grad);padding:2px}
+.arch__body{position:relative;background:
+  url("../assets/patterns/arabesque.svg"),
+  linear-gradient(180deg,#FFFDF8 0%,var(--card) 45%,#F6EAD0 100%)}
+.arch--sm{padding:3px}.arch--sm .arch__mid{padding:2px}.arch--sm .arch__line{padding:1px}
+
+/* --- Invitation card: ivory card, double gold keyline, floral corners --- */
+.invite-card{position:relative;background:var(--card);padding:clamp(.9rem,3vw,1.5rem);
+  border:1px solid var(--gold-soft);box-shadow:inset 0 0 0 5px var(--card),inset 0 0 0 6px var(--gold-soft),var(--shadow)}
+.corner{position:absolute;width:clamp(44px,9vw,72px);aspect-ratio:1;pointer-events:none;
+  background:url("../assets/patterns/corner.svg") center/contain no-repeat}
+.corner.tl{top:6px;left:6px}
+.corner.tr{top:6px;right:6px;transform:scaleX(-1)}
+.corner.bl{bottom:6px;left:6px;transform:scaleY(-1)}
+.corner.br{bottom:6px;right:6px;transform:scale(-1)}
+
+/* --- Divider --- */
+.divider{display:flex;align-items:center;justify-content:center;gap:.8rem;color:var(--font-gold);margin:1.1rem auto;max-width:260px}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold-soft))}
+.divider::after{transform:scaleX(-1)}
+.divider svg{width:16px;height:16px;fill:currentColor}
+
+/* --- Icons --- */
+.icon{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* --- Buttons --- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:48px;padding:.75rem 1.9rem;
+  font:500 .98rem/1 var(--f-body);letter-spacing:.03em;text-decoration:none;cursor:pointer;border:1px solid var(--gold-muted);
+  background:var(--gold-grad);color:#3A2B10;border-radius:999px;box-shadow:0 8px 18px -10px rgba(166,115,27,.6);
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease),filter .25s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.05);box-shadow:0 12px 22px -10px rgba(166,115,27,.75)}
+.btn:active{transform:none}
+.btn--ghost{background:transparent;color:var(--font-gold-deep);box-shadow:none}
+.btn--ghost:hover{background:rgba(217,198,163,.3);box-shadow:none}
+.btn--sm{min-height:42px;padding:.55rem 1.3rem;font-size:.9rem}
+
+/* --- Navigation --- */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;height:var(--header-h);background:rgba(250,244,230,.94);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 1.25rem}
+.nav__brand{font:italic 500 1.35rem var(--f-serif);color:var(--gold-deep);text-decoration:none}
+.nav__toggle{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:var(--font-gold-deep)}
+.nav__toggle span,.nav__toggle span::before,.nav__toggle span::after{display:block;width:22px;height:2px;background:currentColor;margin:auto;position:relative;transition:transform .25s,opacity .25s}
+.nav__toggle span::before,.nav__toggle span::after{content:"";position:absolute;left:0}
+.nav__toggle span::before{top:-7px}.nav__toggle span::after{top:7px}
+.nav__toggle[aria-expanded="true"] span{background:transparent}
+.nav__toggle[aria-expanded="true"] span::before{transform:translateY(7px) rotate(45deg)}
+.nav__toggle[aria-expanded="true"] span::after{transform:translateY(-7px) rotate(-45deg)}
+.nav__links{display:flex;gap:1.6rem}
+.nav__links a{font-size:.92rem;text-decoration:none;color:var(--font-gold-deep);padding:.3rem 0;border-bottom:1px solid transparent;transition:border-color .2s,color .2s}
+.nav__links a:hover,.nav__links a.is-active{color:var(--font-gold);border-color:var(--font-gold)}
+
+/* --- Forms --- */
+.field{display:grid;gap:.4rem;margin-bottom:1.2rem;text-align:left}
+.field label,.field legend{font:600 .9rem var(--f-body);color:var(--font-gold-deep);padding:0}
+.input{width:100%;background:var(--card);border:1px solid var(--gold);border-radius:4px;padding:.8rem 1rem;min-height:48px;transition:box-shadow .2s,border-color .2s}
+.input:focus{outline:none;border-color:var(--font-gold);box-shadow:0 0 0 3px rgba(161,116,31,.25)}
+textarea.input{resize:vertical;min-height:110px}
+.field[data-invalid] .input{border-color:#9b4a3c}
+.error{color:#9b4a3c;font-size:.86rem;min-height:1.1em}
+.choice{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+.choice label{display:flex;align-items:center;justify-content:center;text-align:center;min-height:48px;padding:.5rem .8rem;border:1px solid var(--gold);border-radius:4px;cursor:pointer;font-weight:400;background:var(--card);transition:background .2s}
+.choice input{position:absolute;opacity:0}
+.choice input:checked+span{font-weight:600;color:var(--font-gold)}
+.choice label:has(input:checked){background:var(--champagne);border-color:var(--font-gold)}
+.choice label:has(input:focus-visible){outline:2px solid var(--font-gold);outline-offset:2px}
+.form-note{font-size:.85rem;color:var(--text-2);margin-top:.9rem;text-align:center}
+.form-status{text-align:center;margin-top:1rem;min-height:1.5rem;color:var(--font-gold);font-weight:500}
+
+/* --- Back to top --- */
+.to-top{position:fixed;right:1rem;bottom:1rem;z-index:40;width:48px;height:48px;border-radius:50%;border:1px solid var(--gold-muted);background:var(--card);color:var(--font-gold);cursor:pointer;display:grid;place-items:center;
+  opacity:0;visibility:hidden;transform:translateY(8px);transition:.3s var(--ease),box-shadow .3s}
+.to-top.show{opacity:1;visibility:visible;transform:none}
