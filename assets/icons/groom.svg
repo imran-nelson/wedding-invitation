@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGradGroom" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#DEE5ED"/>
+    </linearGradient>
+    
+    <linearGradient id="silverGradGroom" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="35%" stop-color="#CBD5E1"/>
+      <stop offset="70%" stop-color="#7B8C9F"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+
+    <linearGradient id="turbanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#EFF3F8"/>
+      <stop offset="85%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+
+    <linearGradient id="sherwaniGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#242B35"/>
+      <stop offset="50%" stop-color="#181D24"/>
+      <stop offset="100%" stop-color="#0F1318"/>
+    </linearGradient>
+
+    <linearGradient id="stoleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+
+    <!-- Clip Path for circular avatar -->
+    <clipPath id="avatarClipGroom">
+      <circle cx="120" cy="120" r="112"/>
+    </clipPath>
+  </defs>
+
+  <!-- Circular Outer Medallion Border in Silver -->
+  <circle cx="120" cy="120" r="118" fill="none" stroke="url(#silverGradGroom)" stroke-width="2.5"/>
+  <circle cx="120" cy="120" r="115" fill="none" stroke="#94A3B8" stroke-width="0.75" stroke-dasharray="2 3"/>
+  <circle cx="120" cy="120" r="112" fill="url(#bgGradGroom)"/>
+
+  <!-- Content Clustered Inside Circle -->
+  <g clip-path="url(#avatarClipGroom)">
+    <!-- Subtle Background Arabesque Pattern in Silver -->
+    <g opacity="0.18" stroke="#7B8C9F" fill="none" stroke-width="1">
+      <circle cx="120" cy="120" r="85"/>
+      <circle cx="120" cy="120" r="60"/>
+      <path d="M120 35 L120 205 M35 120 L205 120 M60 60 L180 180 M60 180 L180 60"/>
+      <rect x="75" y="75" width="90" height="90" transform="rotate(0 120 120)"/>
+      <rect x="75" y="75" width="90" height="90" transform="rotate(45 120 120)"/>
+    </g>
+
+    <!-- Royal Sherwani (Torso / Shoulders) -->
+    <path d="M42 240 C44 195 72 170 102 165 L120 165 L138 165 C168 170 196 195 198 240 Z" fill="url(#sherwaniGrad)"/>
+    
+    <!-- Sherwani Silver Zari Embroidery on Shoulders -->
+    <path d="M48 240 C52 205 76 182 102 172" fill="none" stroke="url(#silverGradGroom)" stroke-width="2" opacity="0.75"/>
+    <path d="M192 240 C188 205 164 182 138 172" fill="none" stroke="url(#silverGradGroom)" stroke-width="2" opacity="0.75"/>
+
+    <!-- Royal Velvet Stole (Doshalla) over Left Shoulder -->
+    <path d="M52 240 C52 205 60 178 78 170 C88 166 94 175 92 190 C90 208 85 225 84 240 Z" fill="url(#stoleGrad)"/>
+    <path d="M78 170 C88 166 94 175 92 190 C90 208 85 225 84 240" fill="none" stroke="url(#silverGradGroom)" stroke-width="2.5"/>
+    <path d="M52 240 C52 205 60 178 78 170" fill="none" stroke="url(#silverGradGroom)" stroke-width="2"/>
+    <!-- Silver Stole Tassel details -->
+    <circle cx="86" cy="225" r="2.5" fill="#CBD5E1"/>
+    <circle cx="85" cy="235" r="2.5" fill="#CBD5E1"/>
+
+    <!-- Sherwani Nehru Collar -->
+    <path d="M102 165 C102 150 110 144 120 144 C130 144 138 150 138 165 L138 174 C134 177 127 178 120 178 C113 178 106 177 102 174 Z" fill="#1C2129"/>
+    <path d="M102 165 C102 150 110 144 120 144 C130 144 138 150 138 165" fill="none" stroke="url(#silverGradGroom)" stroke-width="2.5"/>
+    
+    <!-- Central Placket with Silver Zari & Pearl/Silver Buttons -->
+    <rect x="117" y="174" width="6" height="66" fill="url(#silverGradGroom)"/>
+    <circle cx="120" cy="182" r="2" fill="#1E293B"/>
+    <circle cx="120" cy="194" r="2" fill="#1E293B"/>
+    <circle cx="120" cy="206" r="2" fill="#1E293B"/>
+    <circle cx="120" cy="218" r="2" fill="#1E293B"/>
+    <circle cx="120" cy="230" r="2" fill="#1E293B"/>
+
+    <!-- Neck -->
+    <path d="M107 148 L107 126 C107 126 113 134 120 134 C127 134 133 126 133 126 L133 148 Z" fill="#E2C9B3"/>
+    <path d="M109 126 C115 132 125 132 131 126 C126 130 114 130 109 126 Z" fill="#C8AE97"/>
+
+    <!-- Face / Head Base -->
+    <path d="M100 95 C100 126 110 138 120 138 C130 138 140 126 140 95 C140 76 132 74 120 74 C108 74 100 76 100 95 Z" fill="#EBD2BE"/>
+    
+    <!-- Ears -->
+    <path d="M98 94 C96 90 95 98 98 104 C99 105 101 104 101 100 Z" fill="#DFBFAB"/>
+    <path d="M142 94 C144 90 145 98 142 104 C141 105 139 104 139 100 Z" fill="#DFBFAB"/>
+
+    <!-- Traditional Groom Beard & Mustache (Islamic Trimmed Groom Look) -->
+    <path d="M99 92 C99 105 101 116 106 126 C111 135 116 139 120 139 C124 139 129 135 134 126 C139 116 141 105 141 92 C141 96 139 107 136 112 C133 118 128 126 120 126 C112 126 107 118 104 112 C101 107 99 96 99 92 Z" fill="#1C2128"/>
+    <path d="M110 112 C113 109 118 109 120 111 C122 109 127 109 130 112 C127 114 123 115 120 113 C117 115 113 114 110 112 Z" fill="#1C2128"/>
+
+    <!-- Dignified Facial Contours -->
+    <path d="M106 91 C109 89 114 89 116 92" fill="none" stroke="#1C2128" stroke-width="2" stroke-linecap="round"/>
+    <path d="M134 91 C131 89 126 89 124 92" fill="none" stroke="#1C2128" stroke-width="2" stroke-linecap="round"/>
+    <path d="M108 96 C110 99 114 99 115 96" fill="none" stroke="#2D3748" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M132 96 C130 99 126 99 125 96" fill="none" stroke="#2D3748" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M120 90 L120 103 C118 104 122 104 120 103" fill="none" stroke="#C8AE97" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- ================= ROYAL WEDDING TURBAN (PLATINUM & SILVER SAFA) ================= -->
+    <path d="M94 85 C92 56 102 44 120 44 C138 44 148 56 146 85 C142 84 135 83 120 83 C105 83 98 84 94 85 Z" fill="url(#turbanGrad)"/>
+    
+    <path d="M93 84 C95 68 114 62 135 60 C144 68 147 75 146 84 C140 76 128 73 114 74 C104 75 97 79 93 84 Z" fill="#DDE4ED"/>
+    <path d="M94 77 C100 66 118 63 138 65 C145 70 148 78 147 84 C137 77 124 74 110 75 C101 75 96 76 94 77 Z" fill="#F1F5F9"/>
+    
+    <path d="M93 85 C98 75 110 70 128 68 C142 74 147 80 146 88 C138 80 126 77 112 78 C102 79 96 82 93 85 Z" fill="#FFFFFF"/>
+    <path d="M93 85 C106 82 120 83 135 88 C144 91 146 95 145 98 C135 89 122 86 108 87 C99 88 95 91 93 85 Z" fill="#CBD5E1"/>
+    
+    <!-- Front Turban Band (Silver Zari Border) -->
+    <path d="M95 86 C105 81 120 81 145 90" fill="none" stroke="url(#silverGradGroom)" stroke-width="2.5"/>
+    <path d="M96 90 C108 85 122 85 144 94" fill="none" stroke="url(#silverGradGroom)" stroke-width="1.5"/>
+
+    <!-- Turban Pleated Fan / Turra on Top -->
+    <path d="M124 45 C122 32 126 25 132 20 C134 26 135 34 133 46 Z" fill="url(#silverGradGroom)"/>
+    <path d="M127 45 C127 34 132 26 138 22 C139 28 138 37 135 47 Z" fill="#E2E8F0"/>
+    <path d="M120 45 C118 36 120 28 125 24 C127 29 127 37 125 46 Z" fill="#94A3B8"/>
+
+    <!-- Royal Kalgi / Sarpech Brooch (Platinum & Sapphire) -->
+    <path d="M112 76 C112 70 115 67 120 67 C125 67 128 70 128 76 C128 81 124 84 120 86 C116 84 112 81 112 76 Z" fill="url(#silverGradGroom)"/>
+    <circle cx="120" cy="76" r="3" fill="#1E293B"/>
+    <circle cx="120" cy="76" r="1.5" fill="#E2E8F0"/>
+    <!-- Hanging Silver Pearl from Kalgi -->
+    <circle cx="120" cy="88" r="2.2" fill="#FFFFFF" stroke="#94A3B8" stroke-width="0.6"/>
+
+    <!-- Kalgi Silver Feather Plume -->
+    <path d="M120 67 C118 55 110 44 104 36 C108 42 114 52 117 62 C118 52 119 42 118 32 C122 40 122 52 121 64 C124 54 128 46 133 39 C130 48 126 58 122 66 Z" fill="url(#silverGradGroom)" opacity="0.95"/>
+    <path d="M120 67 C117 52 112 40 102 32" fill="none" stroke="#94A3B8" stroke-width="1" stroke-linecap="round"/>
+
+    <!-- Turban Trailing Silk (Shamla) -->
+    <path d="M145 88 C149 95 152 108 152 122 C152 136 150 148 148 158 L144 157 C146 147 148 135 148 122 C148 109 146 98 142 92 Z" fill="#DDE4ED"/>
+    <path d="M148 158 L144 157" stroke="url(#silverGradGroom)" stroke-width="2"/>
+  </g>
+</svg>
