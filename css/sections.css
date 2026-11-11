@@ -157,7 +157,7 @@
 .event--nikah .slots{justify-content:center}
 .event--nikah .slot__name{font-size:1.25rem}
 .programme-note{text-align:center;margin-top:2.2rem}
-.programme-note p{font:italic 1.2rem var(--f-serif);color:var(--font-gold-deep);margin-bottom:1rem}
+.programme-note p{font:italic 2rem var(--f-display);color:var(--font-gold-deep);margin-bottom:1rem}
 
 /* ===== SECTION 5 — Countdown ===== */
 .countdown .invite-card{max-width:760px;margin-inline:auto;padding:clamp(2.4rem,6vw,3.6rem) clamp(1rem,4vw,2.4rem);text-align:center}
