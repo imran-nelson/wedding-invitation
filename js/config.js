@@ -22,7 +22,7 @@ window.WEDDING_CONFIG = {
     },
   },
 
-  date: { display: "20 November 2026", nikahISO: "2026-11-20T20:00:00+05:30" },
+  date: { display: "20 November 2026", nikahISO: "2026-11-18T20:00:00+05:30" },
 
   text: {
     bismillahAr: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
