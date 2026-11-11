@@ -28,7 +28,7 @@
         '<svg class="event__crest" aria-hidden="true"><use href="#i-arch"/></svg>' +
         '<p class="event__weekday">' + WI.esc(e.weekday) + '</p><p class="event__day">' + day + '</p><p class="event__month">' + WI.esc(month) + '</p>' +
         '<h3 class="event__title">' + WI.esc(e.title) + '</h3><ul class="slots">' + slots + '</ul>' +
-        '<button class="btn btn--ghost btn--sm" type="button" data-cal="' + e.id + '"><svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg>Add to calendar</button></article>';
+        // '<button class="btn btn--ghost btn--sm" type="button" data-cal="' + e.id + '"><svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg>Add to calendar</button></article>';
     }).join('');
   }
 
